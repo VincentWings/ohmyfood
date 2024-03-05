@@ -42,6 +42,30 @@ img {
   height: auto;
 }
 
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  padding: 1.4rem 1.5rem 0.7rem;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+header .link-home {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 3rem 3rem 2.4rem;
+  }
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth;
