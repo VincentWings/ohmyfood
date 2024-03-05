@@ -33,4 +33,35 @@ img {
   height: auto;
 }
 
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000000;
+  background: #F3F3F3;
+  font-family: "Roboto", serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: bold;
+}
+
+a {
+  color: #000000;
+}
+
 /*# sourceMappingURL=main.css.map */

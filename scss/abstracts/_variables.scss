@@ -1,3 +1,61 @@
 //=============================================================================
 //== VARIABLES
 //=============================================================================
+
+//== COLORS - HEX VALUES (list of all the colors)
+
+$color-purple: #9356DC;
+$color-pink: #FF79DA;
+$color-green: #99E2D0;
+$color-green-dark: #008766;
+$color-blue: #89C8FA;
+$color-blue-dark: #003A68;
+
+$color-white: #ffffff;
+$color-grey-lighter: #F3F3F3;
+$color-black: #000000;
+
+//== COLORS - VARIABLES (to use in the code)
+
+$color-1: $color-purple;
+$color-2: $color-pink;
+$color-3: $color-green;
+$color-4: $color-green;
+
+//== COLORS - TEXT AND BACKGROUND
+
+$color-text: $color-black;
+$color-background: $color-grey-lighter;
+
+//== COLORS - LINKS
+
+$color-link: $color-black;
+
+//== FONTS FAMILIES
+
+$font-1: "Roboto", serif;
+$font-2: "Shrikhand", sans-serif;
+
+//== BREAKPOINTS
+
+// Extra small devices (portrait phones, LESS THAN 576px)
+$xs: 575px;
+
+// Small devices (landscape phones, 576px and UP)
+$sm: 576px;
+
+// Medium devices (tablets, 768px and UP)
+$md: 768px;
+
+// Large devices (desktops, 992px and UP)
+$lg: 992px;
+
+// Extra large devices (large desktops, 1200px and UP)
+$xl: 1200px;
+
+// Extra Extra large devices (TV, 4k 1600px and UP)
+$xxl: 1600px;
+
+//== MAX CONTAINER WIDTH
+
+$container-width: 144rem;
