@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassrooms Project 3 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentWings/ohmyfood.git"
+  },
+  "author": "Vincent Wings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentWings/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/VincentWings/ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}
