@@ -47,3 +47,59 @@
     }
 }
 
+//== SECTION - FILTERS
+
+.section-filters {
+    padding: 4.8rem 2rem 4.6rem 2rem;
+    background: $color-white;
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        counter-reset: steps;
+
+        button {
+            position: relative;
+            width: 100%;
+            padding-left: 3.8rem;
+        }
+
+        li {
+            position: relative;
+            width: 100%;
+            padding-left: 1.2rem;
+
+            &::before {
+                position: absolute;
+                top: calc(50% - 1.2rem);
+                left: .1rem;
+                transform: translateY(-50%);
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.4rem;
+                height: 2.4rem;
+                color: $color-white;
+                background: $color-1;
+                font-size: 1.4rem;
+                font-weight: 500;
+                border-radius: 1.5rem;
+                counter-increment: steps;
+                content: counter(steps);
+            }
+        }
+    }
+
+    @include breakpoint(lg) {
+        ol {
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                width: calc((100% / 3) - 1.5rem);
+            }
+        }
+    }
+}
+

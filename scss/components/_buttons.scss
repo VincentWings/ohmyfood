@@ -7,8 +7,11 @@
 .btn {
     display: inline-block;
     padding: 1.3rem 1.9rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-decoration: none;
+    border: 0;
+    cursor: pointer;
 }
 
 //== BUTTONS - 1
@@ -16,12 +19,43 @@
 .btn-1 {
     color: $color-white;
     background: linear-gradient(177deg, $color-2 -30%, $color-1 123.93%);
-    box-shadow: 0 .4rem 1rem 0 rgba($color-black, 0.25);
+    box-shadow: 0 .4rem 1rem 0 rgba($color-black, .25);
     border-radius: 3rem;
     transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
     &:hover {
         opacity: .8;
-        box-shadow: 0 .4rem 1rem 0 rgba($color-black, 0.35);
+        box-shadow: 0 .4rem 1rem 0 rgba($color-black, .35);
+    }
+}
+
+//== BUTTON - FILTER
+
+.btn-filter {
+    margin-bottom: 2.4rem;
+    padding: 2.8rem 3rem;
+    background: $color-grey-lighter;
+    box-shadow: 0 .4rem 1.5rem 0 rgba($color-black, .15);
+    border-radius: 2rem;
+    text-align: left;
+    transition: box-shadow 0.2s ease-in-out;
+
+    i {
+        width: 3.4rem;
+        color: $color-grey;
+        font-size: 1.8rem;
+        transition: color ease-in-out .3s;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    &:hover {
+        box-shadow: 0 .4rem 1rem 0 rgba($color-black, .25);
+
+        i {
+            color: $color-1;
+        } 
     }
 }
