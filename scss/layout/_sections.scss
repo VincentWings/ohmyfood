@@ -1,0 +1,21 @@
+//=============================================================================
+//== SECTIONS
+//=============================================================================
+
+//== SECTION - LOCATION
+
+.section-location {
+    padding: 1.5rem;
+    background: $color-grey-light;
+    text-align: center;
+    box-shadow: 0 .4rem .4rem 0 rgba(0, 0, 0, 0.25);
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        i {
+            padding-right: 1rem;
+        }
+    }
+}
