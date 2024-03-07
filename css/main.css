@@ -325,6 +325,72 @@ img {
   }
 }
 
+.footer {
+  padding: 3rem 2.5rem;
+  padding: 2.2rem 2.5rem;
+  color: #ffffff;
+  background: #353535;
+}
+.footer__primary {
+  order: 2;
+}
+.footer__primary a {
+  font-weight: 500;
+}
+.footer__secondary {
+  order: 3;
+}
+.footer__tertiary {
+  order: 1;
+  margin-bottom: 1rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.6;
+}
+.footer i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .footer {
+    padding: 3rem 2.5rem;
+  }
+  .footer__primary {
+    order: 1;
+  }
+  .footer__secondary {
+    order: 2;
+    margin-left: 5rem;
+  }
+  .footer__tertiary {
+    order: 3;
+    margin-left: 10rem;
+  }
+  .footer ul {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .footer ul li {
+    margin-left: 2.5rem;
+  }
+  .footer .container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.t-homepage .link-home {
+  display: none;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
