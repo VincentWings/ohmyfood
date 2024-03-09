@@ -217,3 +217,25 @@
     }
   }
 }
+
+//== SECTION - BANNER
+
+.section-banner {
+  position: relative;
+  height: 27.5rem;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  @include breakpoint(lg) {
+    height: 30rem;
+  }
+}

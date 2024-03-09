@@ -75,21 +75,34 @@
   background: none;
   font-size: 2rem;
 
-  .like {
-    display: block;
-  }
+  i {
+    position:absolute;
+    top: 0;
+    right: 0;
+    transition: opacity .4s ease-in-out;
 
-  .liked {
-    display: none;
+    &:nth-child(1) {
+      opacity: 1;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      color: transparent;
+      background: radial-gradient(circle 2.5rem at bottom center, $color-2, $color-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
   }
 
   &:hover {
-    .like {
-      display: none;
-    }
-
-    .liked {
-      display: block;
+    i {
+      &:nth-child(1) {
+        opacity: 0;
+      }
+  
+      &:nth-child(2) {
+        opacity: 1;
+      }
     }
   }
 }

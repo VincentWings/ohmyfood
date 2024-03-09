@@ -7,6 +7,17 @@ How to use it:
     }
 }
 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -102,17 +113,27 @@ img {
   background: none;
   font-size: 2rem;
 }
-.btn-fav .like {
-  display: block;
+.btn-fav i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.4s ease-in-out;
 }
-.btn-fav .liked {
-  display: none;
+.btn-fav i:nth-child(1) {
+  opacity: 1;
 }
-.btn-fav:hover .like {
-  display: none;
+.btn-fav i:nth-child(2) {
+  opacity: 0;
+  color: transparent;
+  background: radial-gradient(circle 2.5rem at bottom center, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.btn-fav:hover .liked {
-  display: block;
+.btn-fav:hover i:nth-child(1) {
+  opacity: 0;
+}
+.btn-fav:hover i:nth-child(2) {
+  opacity: 1;
 }
 
 .container {
@@ -322,6 +343,26 @@ img {
   }
   .section-restaurants .cards .card a .tag {
     right: 2rem;
+  }
+}
+
+.section-banner {
+  position: relative;
+  height: 27.5rem;
+  overflow: hidden;
+}
+.section-banner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .section-banner {
+    height: 30rem;
   }
 }
 
