@@ -30,15 +30,13 @@
   </head>
 
   <body class="t-homepage">
-    <header id="header">
-      <h1>
-        <a href="/" aria-label="Home">
-          <img src="img/logo/ohmyfood@2x.svg" alt="ohmyfood" />
-        </a>
-      </h1>
-
-      <a href="/" class="link-home" aria-label="Home">
-        <i class="fa-solid fa-arrow-left"></i>
+    <header class="header">
+      <a href="/" class="header__logo-link" aria-label="Home">
+        <img src="img/logo/ohmyfood@2x.svg" alt="ohmyfood" class="header__logo" />
+      </a>
+    
+      <a href="/" class="header__link-home" aria-label="Home">
+        <i class="fa-solid fa-arrow-left header__icon"></i>
       </a>
     </header>
 
@@ -193,32 +191,32 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer__primary">
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
-            >
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-utensils footer__icon"></i> Proposer un restaurant
+            </a>
           </li>
-
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
-            >
+    
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-handshake-angle footer__icon"></i> Devenir partenaire
+            </a>
           </li>
         </ul>
-
+    
         <ul class="footer__secondary">
-          <li>
-            <a href="#">Mentions légales</a>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Mentions légales</a>
           </li>
-
-          <li>
-            <a href="mailto:contact@ohmyfood.com">Contact</a>
+    
+          <li class="footer__item">
+            <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
           </li>
         </ul>
-
+    
         <ul class="footer__tertiary">
-          <li>
-            <a href="/" aria-label="Home">ohmyfood</a>
+          <li class="footer__item">
+            <a href="/" class="footer__link" aria-label="Home">ohmyfood</a>
           </li>
         </ul>
       </div>

@@ -225,7 +225,7 @@
   height: 27.5rem;
   overflow: hidden;
 
-  img {
+  &__image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -237,5 +237,69 @@
 
   @include breakpoint(lg) {
     height: 30rem;
+  }
+}
+
+//== SECTION: MENU
+
+.section-menu {
+  position: relative;
+  z-index: 1;
+  margin-top: -4rem;
+
+  .container {
+    max-width: 105.5rem;
+    padding: 3rem 1.5rem;
+    background: $color-background;
+    border-radius: 4rem 4rem 0 0;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-weight: 500;
+
+    &-text {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 0;
+      font-family: $font-2;
+      font-size: 2.8rem;
+      font-weight: 400;
+    }
+  }
+
+  &__fav-btn {
+    position: relative;
+    width: 2rem;
+    height: 1em;
+    margin-left: 2.4rem;
+  }
+
+  &__form__title {
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    font-family: $font-1;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 4rem;
+      height: .3rem;
+      background: $color-3;
+      content: "";
+    }
+  }
+
+  @include breakpoint(lg) {
+    &__title {
+      justify-content: center;
+    }
   }
 }

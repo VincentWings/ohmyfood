@@ -27,20 +27,20 @@
         font-size: 1.8rem;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    a {
+    &__link {
         color: $color-white;
         text-decoration: none;
         line-height: 1.6;
     }
 
-    i {
+    &__icon {
         margin-right: 1rem;
         font-size: 1.2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 
     @include breakpoint(lg) {
@@ -60,13 +60,13 @@
             margin-left: 10rem;
         }
 
+        &__item {
+            margin-left: 2.5rem;
+        }
+
         ul {
             display: flex;
             margin-top: 3rem;
-
-            li {
-                margin-left: 2.5rem;
-            }
         }
 
         .container {
