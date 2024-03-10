@@ -56,7 +56,7 @@
       <section class="section-menu">
         <div class="container">
           <div class="section-menu__title">
-            <h1 class="section-menu__title-text">La palette du goût</h1>
+            <h1 class="section-menu__title-text">La note enchantée</h1>
 
             <button
               class="btn btn-fav section-menu__fav-btn"
@@ -70,7 +70,7 @@
             </button>
           </div>
 
-          <form class="section-menu__form" action="/commander" method="post">
+          <form class="section-menu__form" action="/commande" method="post">
             <section class="menu-section">
               <h2 class="section-menu__form__title">Entrées</h2>
 
@@ -80,13 +80,13 @@
                     type="checkbox"
                     id="entree_1"
                     name="entree_1"
-                    value="Fricassée d'escargots"
+                    value="Ravioles de foie gras"
                   />
                 </div>
                 <label class="menu-item__info" for="entree_1">
-                  <h3 class="menu-item__title">Fricassée d'escargots</h3>
+                  <h3 class="menu-item__title">Ravioles de foie gras</h3>
                   <div class="content">
-                    <p class="description">Au piment d'Espelette</p>
+                    <p class="description">Accompagnées de leur crème à la truffe</p>
                     <span class="price">25€</span>
                   </div>
                 </label>
@@ -98,13 +98,13 @@
                     type="checkbox"
                     id="entree_2"
                     name="entree_2"
-                    value="Foie gras de canard mi-cuit"
+                    value="Caviar osciètre"
                   />
                 </div>
                 <label class="menu-item__info" for="entree_2">
-                  <h3 class="menu-item__title">Foie gras de canard mi-cuit</h3>
+                  <h3 class="menu-item__title">Caviar osciètre</h3>
                   <div class="content">
-                    <p class="description">Et ses copeaux de truffe noire</p>
+                    <p class="description">Sur blini à la farine de blé noir</p>
                     <span class="price">35€</span>
                   </div>
                 </label>
@@ -116,16 +116,36 @@
                     type="checkbox"
                     id="entree_3"
                     name="entree_3"
-                    value="Œuf au plat"
+                    value="Homard et espuma de potiron"
                   />
                 </div>
                 <label class="menu-item__info" for="entree_3">
-                  <h3 class="menu-item__title">Œuf au plat</h3>
+                  <h3 class="menu-item__title">Homard et espuma de potiron</h3>
                   <div class="content">
                     <p class="description">
-                      Assaisonné à la truffe sur lit de caviar
+                      Marinés aux zestes d'orange
                     </p>
                     <span class="price">20€</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item__checkbox">
+                  <input
+                    type="checkbox"
+                    id="entree_4"
+                    name="entree_4"
+                    value="Foie gras de canard cuit entier"
+                  />
+                </div>
+                <label class="menu-item__info" for="entree_4">
+                  <h3 class="menu-item__title">Foie gras de canard cuit entier</h3>
+                  <div class="content">
+                    <p class="description">
+                      Confiture de figue et pain toasté
+                    </p>
+                    <span class="price">35€</span>
                   </div>
                 </label>
               </div>
@@ -140,14 +160,14 @@
                     type="checkbox"
                     id="plat_1"
                     name="plat_1"
-                    value="Filet de bœuf aux herbes"
+                    value="Noix de coquilles Saint-Jacques"
                   />
                 </div>
                 <label class="menu-item__info" for="plat_1">
-                  <h3 class="menu-item__title">Filet de bœuf aux herbes</h3>
+                  <h3 class="menu-item__title">Noix de coquilles Saint-Jacques</h3>
                   <div class="content">
                     <p class="description">
-                      Accompagné de sa ribambelle de légumes
+                      Sur lit de purée de céleri-rave
                     </p>
                     <span class="price">40€</span>
                   </div>
@@ -160,14 +180,14 @@
                     type="checkbox"
                     id="plat_2"
                     name="plat_2"
-                    value="Parmentier de queue de bœuf"
+                    value="Langoustine poêlée"
                   />
                 </div>
                 <label class="menu-item__info" for="plat_2">
-                  <h3 class="menu-item__title">Parmentier de queue de bœuf</h3>
+                  <h3 class="menu-item__title">Langoustine poêlée</h3>
                   <div class="content">
                     <p class="description">
-                      À la truffe noire sur sa purée de panais
+                      Purée de patate douce
                     </p>
                     <span class="price">35€</span>
                   </div>
@@ -180,13 +200,13 @@
                     type="checkbox"
                     id="plat_3"
                     name="plat_3"
-                    value="Filet de turbot"
+                    value="Mijoté de queue de bœuf "
                   />
                 </div>
                 <label class="menu-item__info" for="plat_3">
-                  <h3 class="menu-item__title">Filet de turbot</h3>
+                  <h3 class="menu-item__title">Mijoté de queue de bœuf </h3>
                   <div class="content">
-                    <p class="description">Aux agrumes</p>
+                    <p class="description">Et riz sauvage aux zestes de citron</p>
                     <span class="price">44€</span>
                   </div>
                 </label>
@@ -202,13 +222,13 @@
                     type="checkbox"
                     id="dessert_1"
                     name="dessert_1"
-                    value="Paris-Brest"
+                    value="Macaron noisette et chocolat"
                   />
                 </div>
                 <label class="menu-item__info" for="dessert_1">
-                  <h3 class="menu-item__title">Paris-Brest</h3>
+                  <h3 class="menu-item__title">Macaron noisette et chocolat</h3>
                   <div class="content">
-                    <p class="description">Revisité</p>
+                    <p class="description">Glace au caramel brun et sel de Guérande</p>
                     <span class="price">18€</span>
                   </div>
                 </label>
@@ -220,16 +240,16 @@
                     type="checkbox"
                     id="dessert_2"
                     name="dessert_2"
-                    value="Macaron au chocolat d'exception"
+                    value="Baba au rhum revisité"
                   />
                 </div>
                 <label class="menu-item__info" for="dessert_2">
                   <h3 class="menu-item__title">
-                    Macaron au chocolat d'exception
+                    Baba au rhum revisité
                   </h3>
                   <div class="content">
                     <p class="description">
-                      Et glace à la vanille de Madagascar
+                      Avec son coulis de citron
                     </p>
                     <span class="price">22€</span>
                   </div>
@@ -242,14 +262,14 @@
                     type="checkbox"
                     id="dessert_3"
                     name="dessert_3"
-                    value="Mousse au chocolat"
+                    value="Tarte au citron meringuée "
                   />
                 </div>
                 <label class="menu-item__info" for="dessert_3">
-                  <h3 class="menu-item__title">Mousse au chocolat</h3>
+                  <h3 class="menu-item__title">Tarte au citron meringuée </h3>
                   <div class="content">
                     <p class="description">
-                      Au piment d'Espelette et à la truffe noire
+                      Déstructurée
                     </p>
                     <span class="price">23€</span>
                   </div>
