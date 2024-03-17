@@ -18,6 +18,16 @@ How to use it:
   border: 0;
 }
 
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -402,6 +412,8 @@ img {
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
+  animation: slideFromRight 1s ease-in-out;
+  animation-fill-mode: both;
 }
 .section-menu__form__title::after {
   position: absolute;
@@ -493,6 +505,38 @@ img {
   box-shadow: 0 0.4rem 1.5rem 0 rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease-in-out;
   overflow: hidden;
+  animation: slideFromRight 1s ease-in-out;
+  animation-fill-mode: both;
+}
+.section-menu__form .menu-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.section-menu__form .menu-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.section-menu__form .menu-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.section-menu__form .menu-item:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.section-menu__form .menu-item:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.section-menu__form .menu-item:nth-child(6) {
+  animation-delay: 0.7s;
+}
+.section-menu__form .menu-item:nth-child(7) {
+  animation-delay: 0.8s;
+}
+.section-menu__form .menu-item:nth-child(8) {
+  animation-delay: 0.9s;
+}
+.section-menu__form .menu-item:nth-child(9) {
+  animation-delay: 1s;
+}
+.section-menu__form .menu-item:nth-child(10) {
+  animation-delay: 1.1s;
 }
 .section-menu__form .menu-item__title {
   font-weight: 500;
@@ -581,6 +625,12 @@ img {
 
 .t-homepage .header__link-home {
   display: none;
+}
+@media (min-width: 992px) {
+  .t-homepage .header,
+  .t-homepage .section-location {
+    box-shadow: none;
+  }
 }
 
 .t-page main {

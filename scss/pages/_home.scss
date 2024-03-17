@@ -6,4 +6,11 @@
     .header__link-home {
         display: none;
     }
+
+    @include breakpoint(lg) {
+        .header,
+        .section-location {
+            box-shadow: none;
+        }
+    }
 }

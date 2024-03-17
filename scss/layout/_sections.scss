@@ -285,6 +285,8 @@
     font-size: 1.6rem;
     font-weight: 300;
     text-transform: uppercase;
+    animation: slideFromRight 1s ease-in-out;
+    animation-fill-mode: both;
 
     &::after {
       position: absolute;
