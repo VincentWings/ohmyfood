@@ -10,8 +10,8 @@ The goal of this project was to develop a "mobile-first" website that lists menu
 
 ## Features
 
-- Mobile-first design for optimal viewing on various devices.
-- Listings of menus from gourmet restaurants in Paris.
+- Mobile-first and responsive.
+- Listings of menus from restaurants in Paris.
 - Interactive loader to engage users during page load.
 - CSS animations to enhance visual appeal and user experience.
 
