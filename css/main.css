@@ -28,6 +28,32 @@ How to use it:
     transform: translateY(0);
   }
 }
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+@keyframes spin {
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@keyframes fillText {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -61,6 +87,48 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.loader {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  animation: hide 3s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.loader i {
+  margin-right: 1rem;
+  color: #7E7E7E;
+  font-size: 2rem;
+  animation: spin 3s ease-in-out;
+}
+.loader__logo {
+  padding: 1rem;
+  color: transparent;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, black 50%, #EAEAEA 50%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fillText 3s ease-in-out forwards;
+}
+@media (min-width: 992px) {
+  .loader i {
+    font-size: 4rem;
+  }
+  .loader__logo {
+    font-size: 5rem;
+  }
 }
 
 .btn {
@@ -613,6 +681,9 @@ img {
 .section-menu__form .section-submit {
   margin-bottom: 1rem;
   text-align: center;
+  animation: slideFromRight 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
 }
 .section-menu__form .section-submit__btn {
   padding: 1.3rem 4.8rem;
