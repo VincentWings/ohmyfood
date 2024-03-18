@@ -2,6 +2,8 @@
 //== FORMS
 //=============================================================================
 
+//== FORM: SECTION MENU
+
 .section-menu__form {
   margin: auto;
 
@@ -10,7 +12,7 @@
 
     @for $i from 1 through $items {
       &:nth-child(#{$i}) {
-        animation-delay: .1s + ($i/10);
+        animation-delay: .1s + calc($i / 10);
       }
     }
 
@@ -125,5 +127,28 @@
 
   @include breakpoint(lg) {
     max-width: 63.4rem;
+  }
+}
+
+//== FORM: SECTION LOCATION
+
+.section-location__form {
+  input, 
+  input::placeholder {
+    color: $color-black-alt;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  input {
+    width: 12.5rem;
+    max-width: 100%;
+    background: none;
+    border: none; 
+    outline: none;
+  }
+
+  button {
+    display: none;
   }
 }

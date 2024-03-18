@@ -46,12 +46,18 @@
 
     <main>
       <div class="section-location">
-        <p>
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Paris, Belleville</span>
-        </p>
-      </div>
+        <form class="section-location__form">
+          <label for="city">
+            <i class="fa-solid fa-location-dot"></i> 
+            <span class="sr-only">Sélectionnez une ville :</span>
+          </label>
 
+          <input type="text" id="city" name="city" placeholder="Paris, Belleville">
+
+          <button type="submit">Sélectionner</button>
+        </form>
+      </div>
+      
       <section class="section-discover">
         <h1>Réservez le menu qui vous convient</h1>
 

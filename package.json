@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch scss:css",
-    "build": "postcss css/main.css -u autoprefixer cssnano -d -o css/main-min.css"
+    "build": "postcss css/main.css -u autoprefixer cssnano -o css/main-min.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.18",
     "cssnano": "^6.1.0",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.36",
     "postcss-cli": "^11.0.0",
     "sass": "^1.71.1"
   }
