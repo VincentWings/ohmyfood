@@ -34,7 +34,9 @@
 
     &__title,
     .description {
-      max-width: calc(100% - 3rem);
+      display: inline-block;
+      max-width: calc(100% - 4rem);
+      width: 17rem;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -122,6 +124,24 @@
 
     &__btn {
       padding: 1.3rem 4.8rem;
+    }
+  }
+
+  @include breakpoint(sm) {
+    .menu-item {
+      &__title,
+      .description {
+        width: 21rem;
+      }
+    }
+  }
+
+  @include breakpoint(md) {
+    .menu-item {
+      &__title,
+      .description {
+        width: auto;
+      }
     }
   }
 
